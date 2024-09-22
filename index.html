@@ -473,7 +473,7 @@
                 </div>
 
                 <h2 class="font-esthetic my-4" style="font-size: 2.5rem;">Nia &amp; Iqbal</h2>
-                <div id="guest-name" data-message="Kepada Yth Bapak/Ibu/Saudara/i"></div>
+                <div id="guest-name" style="text-transform:capitalize" data-message="Kepada Yth Bapak/Ibu/Saudara/i"></div>
 
                 <button type="button" class="btn btn-light shadow rounded-4 mt-4" onclick="guest.open(this)">
                     <i class="fa-solid fa-envelope-open me-2"></i>Open Invitation
@@ -481,6 +481,15 @@
             </div>
         </div>
     </div>
+
+    <!-- <script>
+        // Mengambil query parameter dari URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const to = urlParams.get('to');
+
+        // Menampilkan hasil di dalam elemen HTML
+        document.getElementById('guest-name').textContent = to;
+    </script> -->
 
     <!-- Theme Button -->
     <button type="button" id="button-theme" style="display: none;" class="btn bg-dark border border-2 btn-sm rounded-circle btn-theme" onclick="theme.change()">
